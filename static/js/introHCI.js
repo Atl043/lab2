@@ -1,10 +1,17 @@
+$(document).ready(function() {
+	initializePage();
+})
+
+
 function initializePage() {
+    $("a.thumbnail").click(projectClick);
+    
     $("#testjs").click(function(e) {
 
         $('.jumbotron h1').text("Javascript is connected");
     });
 }
-$("a.thumbnail").click(projectClick);
+// $("a.thumbnail").click(projectClick);
 function projectClick( event ) {
     // prevent the page from reloading
     event.preventDefault();
